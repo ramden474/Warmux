@@ -1,0 +1,8 @@
+01_fix_repack_configure.patch
+02_desktop_file.patch
+03_respect_build_flags_from_env.patch
+04_fix_build_kfreebsd.patch
+05_fix_build_libpng15.patch
+06_fix_build_sdlnet.patch
+07_fix_build_gcc47.patch
+08_fix_dirlisting.patch

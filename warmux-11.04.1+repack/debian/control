@@ -1,0 +1,125 @@
+Source: warmux
+Section: games
+Priority: optional
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Uploaders: Eddy Petrișor <eddy.petrisor@gmail.com>,
+           Felix Geyer <debfx-pkg@fobos.de>
+Build-Depends: debhelper (>= 9),
+               dh-autoreconf,
+               libsdl1.2-dev,
+               libsdl-gfx1.2-dev (>= 2.0.22),
+               libsdl-image1.2-dev,
+               libsdl-mixer1.2-dev,
+               libsdl-net1.2-dev,
+               libsdl-ttf2.0-dev,
+               libcurl4-gnutls-dev,
+               libfribidi-dev,
+               libpng-dev,
+               libxml2-dev
+Standards-Version: 3.9.3
+Homepage: http://www.wormux.org/
+Vcs-Git: git://git.debian.org/git/pkg-games/warmux/
+Vcs-Browser: http://git.debian.org/?p=pkg-games/warmux.git;a=summary
+
+Package: warmux
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, warmux-data (= ${source:Version})
+Replaces: wormux (<< 1:11.01)
+Breaks: wormux (<< 1:11.01)
+Description: turn-based artillery game on 2D maps
+ WarMUX is a free game in the genre of "turn-based artillery games"
+ like Scorched Earth or Worms.
+ Several players can play together, either locally or over the network.
+ It is also possible to compete against computer-driven teams.
+ The teams are styled after the mascots of various free software projects.
+
+Package: warmux-servers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Replaces: wormux-servers (<< 1:11.01)
+Breaks: wormux-servers (<< 1:11.01)
+Description: stand alone server and game index server for WarMUX
+ WarMUX is a free game in the genre of "turn-based artillery games"
+ like Scorched Earth or Worms.
+ Several players can play together, either locally or over the network.
+ It is also possible to compete against computer-driven teams.
+ The teams are styled after the mascots of various free software projects.
+ .
+ This package contains the stand alone server and the index server for
+ WarMUX. You will need this package if you want to host a standalone
+ WarMUX server or a WarMUX index server which can be always available
+ for anyone who might want to play.
+ .
+ Note that if you want to play a network game, this package is not
+ absolutely necessary since any of the game players can host the game.
+ .
+ If you want to play the game, you need to install the warmux package.
+
+Package: warmux-data
+Architecture: all
+Depends: ttf-dejavu-core, fonts-vlgothic, ttf-wqy-microhei, ${misc:Depends}
+Replaces: wormux-data (<< 1:11.01)
+Breaks: wormux-data (<< 1:11.01)
+Description: data files for the WarMUX game
+ WarMUX is a free game in the genre of "turn-based artillery games"
+ like Scorched Earth or Worms.
+ Several players can play together, either locally or over the network.
+ It is also possible to compete against computer-driven teams.
+ The teams are styled after the mascots of various free software projects.
+ .
+ This package contains data like maps and teams. If you want to play
+ the game, you need to install the warmux package.
+
+Package: warmux-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${misc:Depends},
+         warmux (= ${binary:Version}) | warmux-server (= ${binary:Version})
+Replaces: wormux-dbg (<< 1:11.01)
+Breaks: wormux-dbg (<< 1:11.01)
+Description: debugging symbols for the WarMUX game
+ WarMUX is a free game in the genre of "turn-based artillery games"
+ like Scorched Earth or Worms.
+ Several players can play together, either locally or over the network.
+ It is also possible to compete against computer-driven teams.
+ The teams are styled after the mascots of various free software projects.
+ .
+ This package contains the debugging symbols associated with warmux and
+ warmux-server.
+
+Package: wormux
+Section: oldlibs
+Priority: extra
+Architecture: all
+Depends: ${misc:Depends}, warmux
+Description: transitional package for warmux
+ This is a dummy transitional package for warmux and can be
+ safely removed after the installation is complete.
+
+Package: wormux-servers
+Section: oldlibs
+Priority: extra
+Architecture: all
+Depends: ${misc:Depends}, warmux-servers
+Description: transitional package for warmux-servers
+ This is a dummy transitional package for warmux-servers and can be
+ safely removed after the installation is complete.
+
+Package: wormux-data
+Section: oldlibs
+Priority: extra
+Architecture: all
+Depends: ${misc:Depends}, warmux-data
+Description: transitional package for warmux-data
+ This is a dummy transitional package for warmux-data and can be
+ safely removed after the installation is complete.
+
+Package: wormux-dbg
+Section: oldlibs
+Priority: extra
+Architecture: all
+Depends: ${misc:Depends}, warmux-dbg
+Description: transitional package for warmux-dbg
+ This is a dummy transitional package for warmux-dbg and can be
+ safely removed after the installation is complete.
