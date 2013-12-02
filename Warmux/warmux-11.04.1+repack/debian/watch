@@ -1,0 +1,4 @@
+version=3
+
+opts="uversionmangle=s/beta/~beta/,dversionmangle=s/\+repack$//" \
+http://download.gna.org/warmux/warmux-(\d[\d\.a-z]+)\.tar\.(?:bz2|gz)

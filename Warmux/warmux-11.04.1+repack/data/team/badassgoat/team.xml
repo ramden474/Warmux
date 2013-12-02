@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources SYSTEM "../team.dtd" []>
+<resources>
+  <name>Badass Goat</name>
+  <surface name="flag" file="flag.png" />
+  <surface name="death_flag" file="dead.png" />
+  <surface name="big_flag" file="flag64.png" />
+  <team>
+	<character name="Shit Just Goat Serious" body="badassgoat"/>
+	<character name="I Goat Balls of Steel" body="badassgoat"/>
+	<character name="Goatta Goat Fast" body="badassgoat"/>
+	<character name="Goat Dammit!" body="badassgoat"/>
+	<character name="What The Goat?!?" body="badassgoat"/>
+	<character name="Goat Skillz?" body="badassgoat"/>
+	<character name="I Love Goats" body="badassgoat"/>
+	<character name="Pls Not The Goat!" body="badassgoat"/>
+	<character name="You Goatta Be Kidding Me!" body="badassgoat"/>
+	<character name="Alex The Goat" body="badassgoat"/>
+	<character name="Arnaud The Goat" body="badassgoat"/>
+	<character name="Xavier The Goat" body="badassgoat"/>
+	<character name="JWill The Goat" body="badassgoat"/>
+	<character name="Julien The Goat" body="badassgoat"/>  
+  </team>
+    <color name="teamcolor" r="107" g="0" b="14" a="255" />
+</resources>

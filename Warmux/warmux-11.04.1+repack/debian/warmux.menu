@@ -1,0 +1,7 @@
+?package(warmux): \
+	needs="X11" \
+	section="Games/Action"\
+	icon="/usr/share/pixmaps/warmux.xpm" \
+	title="WarMUX" \
+	longtitle="A 2D game where funny characters launch funny weapons" \
+	command="/usr/games/warmux"
