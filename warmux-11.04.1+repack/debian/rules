@@ -1,0 +1,31 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --parallel --with autoreconf
+
+override_dh_auto_configure:
+	dh_auto_configure -- --with-datadir-name=\$${prefix}/share/games/warmux \
+	  --bindir=\$${prefix}/games --enable-servers --enable-fribidi \
+	  --with-font-path=/usr/share/fonts/truetype/ttf-dejavu/DejaVuSans.ttf
+
+override_dh_auto_install:
+	dh_auto_install
+	
+	# these font files will be replaced with symlinks
+	rm debian/tmp/usr/share/games/warmux/font/VL-Gothic-Regular.ttf
+	rm debian/tmp/usr/share/games/warmux/font/wqy-microhei-lite.ttc
+	
+	rm debian/tmp/usr/share/pixmaps/warmux_128x128.png
+
+override_dh_install:
+	dh_install --list-missing
+
+override_dh_compress:
+	dh_compress -X.pdf
+
+override_dh_strip:
+	dh_strip --dbg-package=warmux-dbg
+
+repack:
+	rm -rf ./build
+	rm ./data/font/Ubuntu-R.ttf

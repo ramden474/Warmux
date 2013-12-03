@@ -1,0 +1,190 @@
+This package was debianized by Jean Parpaillon <jean.parpaillon@free.fr> on
+Mon,  9 Jan 2006 14:21:55 +0100.
+
+The debianization of the package as a whole is BSD licensed and is
+Copyright 2006-2011 by the WarMUX packagers
+See changelog.Debian for the particular people having laid their hands
+on it.
+
+
+It was downloaded from http://wormux.org/
+
+Copyright (c) 2001-2011:
+
+   Anthony CARRÉ <yeknan_AT_yahoo_DOT_fr>
+   Christophe GISQUET <christophe_DOT_gisquet_AT_gmail_DOT_com>
+   Florian KÖBERLE <florian_AT_fkoeberle_DOT_de>
+   Frédéric BERTOLUS <fredb219_AT_gmail_DOT_com>
+   Jaka KRANJC <svn_AT_lynxlynx_DOT_info>
+   Lawrence AZZOUG <lami_AT_warmux_DOT_org>
+   Matthieu FERTRÉ <matthieu.fertre_AT_free_DOT_fr>
+   Jean-Christophe DUBERGA <jcduberga_AT_gmx_DOT_de>
+   Laurent DEFERT SIMONNEAU <lodesi2_AT_yahoo_DOT_fr>
+   Olivier SERRES <olivier.serres_AT_gmail_DOT_com>
+   Reiner HERRMANN <reiner_AT_reiner-h_DOT_de>
+   Renaud LOTTIAUX <renaud.lottiaux_AT_free_DOT_fr>
+   Sébastien GONZALVE <oznog_AT_zarb_DOT_org>
+   Victor STINNER <victor.stinner_AT_haypocalc_DOT_com>
+   Yannig PERRÉ <yannig.perre_AT_gmail_DOT_com>
+   and WarMUX contributors (see data/authors.xml).
+
+License:
+
+   This package is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+
+   This package is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this package; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+
+On Debian systems, the complete text of the GNU General
+Public License can be found in `/usr/share/common-licenses/GPL-2'.
+
+
+The files in lib/fixedpoint are covered by the following license:
+----------------------------------------------------------------------
+
+ Copyright (c) 2010, Warmux Team
+ Copyright (c) 2007, Markus Trenkwalder
+ Copyright (c) 2004, David Blythe, Hans Martin Will
+
+ All rights reserved.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+
+ * Redistributions of source code must retain the above copyright notice,
+   this list of conditions and the following disclaimer.
+
+ * Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+ * Neither the name of the library's copyright owner nor the names of its
+   contributors may be used to endorse or promote products derived from this
+   software without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+ CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+The data/font/VL-Gothic-Regular.ttf TrueType font is covered by the following 
+license:
+----------------------------------------------------------------------
+
+License for VLGothic Font Family
+--------------------------------
+
+This font includes glyphs derived from M+ FONTS which is created by
+M+ FONTS PROJECT. License for M+ FONTS part is described in M+ FONTS
+PROJECT's license.
+
+This font also includes glyphs derived from Sazanami Gothic font which
+is created by Electronic Font Open Laboratory (/efont/). Licenses for
+Sazanami Gothic part is described in it's license.
+
+There is no limitation and the below description is not applied
+as for in order not to reuse as font (ex: font is embeded to documents).
+
+Copyright (c) 1990-2003 Wada Laboratory, the University of Tokyo.
+Copyright (c) 2003-2004 Electronic Font Open Laboratory (/efont/).
+Copyright (C) 2003-2006 M+ FONTS PROJECT
+Copyright (C) 2006 Daisuke SUZUKI <daisuke@vinelinux.org>.
+Copyright (C) 2006 Project Vine <Vine@vinelinux.org>.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the above copyright notice,
+   this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+3. Neither the name of the Wada Laboratory, the University of Tokyo nor
+   the names of its contributors may be used to endorse or promote products
+   derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY WADA LABORATORY, THE UNIVERSITY OF TOKYO AND
+CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT
+NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE LABORATORY OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-------------------------------------------------------------------------
+M+ FONTS License
+-------------------------------------------------------------------------
+
+M+ FONTS                                Copyright (C) 2003-2006 M+ FONTS PROJECT
+
+These fonts are free softwares.
+Unlimited permission is granted to use, copy, and distribute it, with
+or without modification, either commercially and noncommercially.
+THESE FONTS ARE PROVIDED "AS IS" WITHOUT WARRANTY.
+
+http://mplus-fonts.sourceforge.jp/mplus-outline-fonts/
+
+-------------------------------------------------------------------------
+Sazanami Font License
+-------------------------------------------------------------------------
+
+Copyright (c) 1990-2003
+	Wada Laboratory, the University of Tokyo. All rights reserved.
+Copyright (c) 2003-2004
+	Electronic Font Open Laboratory (/efont/). All rights reserved.
+
+Binary data is handled equivalent to source code license.  However,
+there is no limitation and the below description is not applied
+as for in order not to reuse as font (ex: font is embedded to documents).
+
+
+
+The data/font/wqy-microhei-lite.ttc TrueType font is covered by the following 
+license:
+----------------------------------------------------------------------
+
+Copyright (c) 2007, Google Corp.;
+Copyright (c) 2008,2009 WenQuanYi Board of Trustees and Qianqian Fang.
+
+This font is dual-licensed under Apache License 2.0 or GNU General Public License v3
+with font embedding exceptions. 
+
+GPL with font embedding exception:
+
+http://www.gnu.org/licenses/old-licenses/gpl-2.0-faq.html#FontException
+
+As a special exception, if you create a document which uses this
+font, and embed this font or unaltered portions of this font into
+the document, this font does not by itself cause the resulting
+document to be covered by the GNU General Public License. This
+exception does not however invalidate any other reasons why the
+document might be covered by the GNU General Public License. If you
+modify this font, you may extend this exception to your version of
+the font, but you are not obligated to do so. If you do not wish to
+do so, delete this exception statement from your version.
+
+On Debian systems, the complete text of the GNU General
+Public License v3 can be found in `/usr/share/common-licenses/GPL-3'
+and the complete text of the Apache License 2.0 in `/usr/share/common-licenses/Apache-2.0'.

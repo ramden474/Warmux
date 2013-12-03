@@ -1,0 +1,14 @@
+Description: Fix FTBFS on kfreebsd.
+Author: Gonéri Le Bouder <goneri@rulezlan.org>
+
+--- warmux-11.01.orig/configure.ac
++++ warmux-11.01/configure.ac
+@@ -54,7 +54,7 @@ case "${host}" in
+ case "${host}" in
+   i[[3456789]]86-*-mingw32*) WIN32="yes" ;;
+   *freebsd*)
+-    LIBS="$LIBS -lintl" # a temporary hackish workaround
++    LIBS="$LIBS" # a temporary hackish workaround
+     ;;
+   *cygwin*) WIN32="yes" ;;
+   *-apple-darwin*)

@@ -1,0 +1,7 @@
+Source repackaging
+==================
+
+The upstream tarball used to build this package has been repackaged to
+remove unneeded/unwanted files and directories.
+
+The "repack" target of debian/rules removes these unwanted files.
