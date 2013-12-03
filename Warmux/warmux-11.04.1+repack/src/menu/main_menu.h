@@ -33,7 +33,7 @@ class MainMenu : public Menu
 {
   ButtonPic *play, *network, *options, *bench;
   ButtonPic *help, *credits, *replay, *quit;
-  Text * version_text, *website_text;
+  Text * version_text, *website_text, *creator_text;
 
 public:
   typedef enum

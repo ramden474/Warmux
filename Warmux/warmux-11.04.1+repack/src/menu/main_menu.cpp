@@ -37,12 +37,13 @@
 #endif
 
 // Position du texte de la version
-const int VERSION_DY = -40;
+const int VERSION_DY = -60;
 
 MainMenu::~MainMenu()
 {
   delete version_text;
   delete website_text;
+  delete creator_text;
   StatStop("Main:Menu");
 }
 
@@ -50,7 +51,7 @@ MainMenu::MainMenu() :
     Menu("main_menu/bg_main", vNo)
 {
   Point2i size(120,110);
-  Box* box = new GridBox(2, 4, 6, true);
+  Box* box = new GridBox(2, 4, 6, false);
 
   play = new ButtonPic(_("Play"), "menu/ico_play", size);
   box->AddWidget(play);
@@ -87,11 +88,14 @@ MainMenu::MainMenu() :
 
   widgets.Pack();
 
-  std::string s = _("Version") + std::string(" ")+Constants::WARMUX_VERSION;
-  version_text = new Text(s, orange_color, Font::FONT_MEDIUM, Font::FONT_BOLD, true);
+  std::string s = _("Version") + std::string(" ")+ std::string("1.0");
+  version_text = new Text(s, black_color, Font::FONT_MEDIUM, Font::FONT_BOLD, true);
 
-  std::string s2(Constants::WEB_SITE);
-  website_text = new Text(s2, orange_color, Font::FONT_MEDIUM, Font::FONT_BOLD, true);
+  std::string s2("http://informatique.cvm.qc.ca/");
+  website_text = new Text(s2, black_color, Font::FONT_MEDIUM, Font::FONT_BOLD, true);
+
+  std::string s3("Par Xavier et Arnaud");
+  creator_text = new Text(s3, black_color, Font::FONT_MEDIUM, Font::FONT_BOLD, true);
 
   if (!JukeBox::GetInstance()->IsPlayingMusic()) {
     JukeBox::GetInstance()->PlayMusic("menu");
@@ -220,7 +224,9 @@ void MainMenu::DrawBackground()
   version_text->DrawCenter(Point2i(window.GetWidth()/2,
                                    window.GetHeight() + VERSION_DY));
   website_text->DrawCenter(Point2i(window.GetWidth()/2,
-                                   window.GetHeight() + VERSION_DY/2));
+                                   window.GetHeight() + VERSION_DY-20));
+  creator_text->DrawCenter(Point2i(window.GetWidth()/2,
+                                   window.GetHeight() + VERSION_DY-40));
 }
 
 void MainMenu::RedrawBackground(const Rectanglei& rect) const
@@ -232,7 +238,9 @@ void MainMenu::RedrawBackground(const Rectanglei& rect) const
   Point2i version_pos(window.GetWidth()/2,
 		      window.GetHeight() + VERSION_DY);
   Point2i website_pos(window.GetWidth()/2,
-		      window.GetHeight() + VERSION_DY/2);
+		      window.GetHeight() + VERSION_DY-20);
+  Point2i creator_pos(window.GetWidth()/2,
+		      window.GetHeight() + VERSION_DY-40);
 
   if (rect.Contains(version_pos)) {
     version_text->DrawCenter(version_pos);
@@ -240,5 +248,9 @@ void MainMenu::RedrawBackground(const Rectanglei& rect) const
 
   if (rect.Contains(website_pos)) {
     website_text->DrawCenter(website_pos);
+  }
+
+  if (rect.Contains(creator_pos)) {
+    creator_text->DrawCenter(creator_pos);
   }
 }

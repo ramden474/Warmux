@@ -203,7 +203,7 @@ void AppWarmux::DisplayLoadingPicture()
   Config *config = Config::GetInstance();
 
   std::string txt_version =
-    _("Version") + std::string(" ") + Constants::WARMUX_VERSION;
+    _("Version") + std::string(" ") + std::string("1.0");
   std::string filename = config->GetDataDir() + "menu" PATH_SEPARATOR "background_loading.jpg";
 
   Surface surfaceLoading(filename.c_str());
@@ -214,9 +214,9 @@ void AppWarmux::DisplayLoadingPicture()
 
   GameTime::GetInstance()->Reset();
 
-  Text text1(_("Warmux launching..."), white_color,
+  Text text1(_("Goatmux launching..."), black_color,
              Font::FONT_HUGE, Font::FONT_BOLD, true);
-  Text text2(txt_version, white_color, Font::FONT_HUGE, Font::FONT_BOLD,
+  Text text2(txt_version, black_color, Font::FONT_HUGE, Font::FONT_BOLD,
              true);
 
   Point2i windowCenter = video->window.GetSize() / 2;
